@@ -22,7 +22,7 @@
   📃 Project preview
 </h2>
 
-![image]()
+![image](https://github.com/marcoftmartins/boraCodar-05-calculator/assets/47821731/315e493e-68ed-4c2a-8d92-e07c40909967)
 
 ---
 
