@@ -20,6 +20,7 @@ const getValue = (event) => {
 
 const erase = () => {
   input.innerHTML = input.innerText.slice(0, -1)
+  lastCalc.innerHTML = lastCalc.innerText.slice(0, -1)
 }
 
 const clearCalculator = () => {
@@ -42,6 +43,8 @@ const percentage = () => {
 
 const convert = () => {
   if (input.innerText != '') {
+    lastCalc.innerHTML = eval(lastCalc.innerText)
     input.innerHTML *= -1
+    lastCalc.innerHTML *= -1
   }
 }
