@@ -1,0 +1,124 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(180deg, #807ece 0%, #8e7ece 100%);
+  font-size: 1.6rem;
+  display: flex;
+  min-height: 100vh;
+}
+
+#calculator {
+  height: 100%;
+  margin: auto;
+  background-color: #2d2a37;
+  border-radius: 4.8rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 188px 52px rgba(0, 0, 0, 0.01), 0px 120px 48px rgba(0, 0, 0, 0.04),
+    0px 68px 41px rgba(0, 0, 0, 0.15), 0px 30px 30px rgba(0, 0, 0, 0.26),
+    0px 8px 17px rgba(0, 0, 0, 0.29), inset 0px 6px 8px rgba(255, 255, 255, 0.1),
+    inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+}
+
+.wrapper {
+  margin: 5.4rem 3.2rem 3.2rem 3.2rem;
+  min-height: 100%;
+}
+
+#screen {
+  margin: 0 0 2rem 1.5rem;
+  padding: 0 2.2rem 0 1.8rem;
+}
+
+.last-sum {
+  margin-bottom: 0.8rem;
+  text-align: right;
+  font-size: 2rem;
+  color: #6b6b6b;
+}
+
+.result {
+  color: #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3.6rem;
+}
+
+#buttons {
+  width: 100%;
+}
+
+table {
+  border-spacing: 1.2rem;
+}
+
+#buttons button {
+  font-family: 'Rubik', sans-serif;
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ebebeb;
+  border-radius: 999px;
+  width: 6.4rem;
+  height: 6.4rem;
+  transition: 0.25s ease-in-out;
+}
+
+#buttons button.normal {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #2d2a37;
+  box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04),
+    0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26),
+    0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+}
+
+#buttons button.operator {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0.01%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #462878;
+  box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04),
+    0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26),
+    0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.1);
+}
+
+#buttons button.equals {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #7f45e2;
+  box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04),
+    0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26),
+    0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.1);
+}
+
+#buttons .normal.purple-text {
+  color: #975dfa;
+}
+
+#buttons button:hover {
+  cursor: pointer;
+  background: #8d61d2;
+}
